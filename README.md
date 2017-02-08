@@ -1,6 +1,5 @@
 # nicor88.github.io
-My Github Page
-
+Blog page SPA
 
 ## Dependencies
 

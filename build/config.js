@@ -28,7 +28,8 @@ var config = {
       'node_modules/angular/angular.js',
       'node_modules/angular-ui-router/release/angular-ui-router.js'
     ],
-    css: ['src/css/**/*.css']
+    css: ['src/css/**/*.css'],
+    cssExternal: []
   }
 };
 
