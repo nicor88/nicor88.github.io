@@ -4,7 +4,7 @@ Blog build as SPA (Angular)
 ## Dependencies
 * Node.js
 * npm
-* install missing packages with `npm install
+* install missing packages with `npm install`
 
 ## Building Local Development
 Build for local development and see the result on localhost:8000
