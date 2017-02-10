@@ -1,8 +1,6 @@
 'use strict';
 
 var config = {
-  // http://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables
-  isDeploy: process.env.CI === 'true',
   targetJsFile: 'application.js',
   targetJsLibsFile: 'libs.js',
   targetCssFile: 'application.css',
