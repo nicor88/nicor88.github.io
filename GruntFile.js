@@ -10,12 +10,8 @@ module.exports = function(grunt) {
     copy: {
       imgPublic: { cwd: config.copy.srcImg, src: '**/*', dest: config.copy.publicImg, expand: true },
       indexPublic: { src: 'index.html', dest: config.publicDir },
-      fontsPublic: { cwd: config.copy.srcFonts, src: '**/*',
-        dest: config.copy.publicFonts, expand: true },
       imgLocalDev: { cwd: config.copy.srcImg, src: '**/*', dest: config.copy.localDevImg, expand: true },
-      indexLocalDev: { src: 'index-local-dev.html', dest: config.localDevDir + 'index.html' },
-      fontsLocalDev: { cwd: config.copy.srcFonts, src: '**/*',
-        dest: config.copy.localDevFonts, expand: true }
+      indexLocalDev: { src: 'index-local-dev.html', dest: config.localDevDir + 'index.html' }
     },
     concat: {
       jsLibsLocalDev : {
@@ -96,11 +92,11 @@ module.exports = function(grunt) {
 
   // build for public
   grunt.registerTask('build-public', ['clean:public', 'copy:imgPublic', 'copy:indexPublic',
-    'copy:fontsPublic', 'concat:jsLibsPublic', 'concat:jsAppPublic', 'concat:cssPublic', 'ngtemplates:public']);
+    'concat:jsLibsPublic', 'concat:jsAppPublic', 'concat:cssPublic', 'ngtemplates:public']);
 
   // build for local-dev
   grunt.registerTask('build-local-dev', ['clean:localDev', 'copy:imgLocalDev', 'copy:indexLocalDev',
-    'copy:fontsLocalDev', 'concat:jsLibsLocalDev', 'concat:jsAppLocalDev', 'concat:cssLocalDev', 'ngtemplates:localDev']);
+    'concat:jsLibsLocalDev', 'concat:jsAppLocalDev', 'concat:cssLocalDev', 'ngtemplates:localDev']);
   // serve local-dev folder
   grunt.registerTask('serve', ['connect:server', 'watch']);
 };

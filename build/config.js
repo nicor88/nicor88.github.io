@@ -8,11 +8,8 @@ var config = {
   localDevDir: './local-dev/',
   copy: {
     srcImg: 'src/img',
-    srcFonts: 'node_modules/bootstrap/dist/fonts/',
     publicImg: 'public/img',
-    publicFonts: 'public/fonts',
-    localDevImg: 'local-dev/img',
-    localDevFonts: 'local-dev/fonts'
+    localDevImg: 'local-dev/img'
   },
   src: {
     js: [
