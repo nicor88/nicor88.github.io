@@ -1,9 +1,30 @@
 .main-view {
-  margin-top: 60px;
+  margin-top: 65px;
 }
 
 .articles p {
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
+}
+
+.article-name {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 15px;
+  padding: 5px;
+}
+
+.article-name a{
+  font-size: 25px;
+  font-weight: 400;
+  margin: 15px;
+  padding: 5px;
+  color: #000000;
+}
+
+.article-date {
+  font-size: 24px;
+  font-weight: 200;
+  margin: 15px;
 }

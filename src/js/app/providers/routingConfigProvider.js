@@ -14,6 +14,20 @@ angular.module('blog').provider('$routingConfig', function() {
     templateUrl: 'templates/about.html',
     controller: 'aboutController'
   };
+  routes.article1 = {
+    state: 'article1',
+    title: 'nicor88 - Article 1',
+    url: '/article1',
+    templateUrl: 'templates/articles/2017-02-08_article1.html',
+    controller: 'indexController'
+  };
+  routes.article2 = {
+    state: 'article2',
+    title: 'nicor88 - Article 2',
+    url: '/article2',
+    templateUrl: 'templates/articles/2017-02-10_article2.html',
+    controller: 'indexController'
+  };
   return {
     $get: function() {
       return routes;

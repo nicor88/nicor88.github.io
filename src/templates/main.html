@@ -5,18 +5,21 @@
 </div>
 
 <div class="articles">
-    <h3>Articles</h3>
     <div class="row">
-        <div class="col-lg-3">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search for...">
-            <span class="input-group-btn">
-                <button class="btn btn-default" type="button">
-                    Search
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                </button>
-            </span>
+        <h2>Articles</h2>
+        <div class="col-lg-3 input-group">
+            <span class="input-group-addon" href="#"><span class="glyphicon glyphicon-search"></span></span>
+            <input type="text" class="form-control" placeholder="Search for..." ng-model="search.name">
         </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <div ng-repeat="article in articles | filter:search:strict">
+            <span class="article-date">
+                {{article.date}}
+            </span>
+            <span class="article-name">
+                <a href="" ng-click="go(article.link)">{{article.name}}</a>
+            </span>
         </div>
     </div>
 </div>

@@ -8,8 +8,9 @@
 
 .navbar-nav> li > a {
   margin-left: 20px;
-  font-size: 18px;
-  font-weight: 200;
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000;
 }
 
 .nav > li > a:hover,

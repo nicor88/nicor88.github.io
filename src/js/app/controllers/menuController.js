@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('blog').controller('menuController',
-  ['$scope', '$rootScope', '$location', 'entryPointsFactory',
-    function ($scope, $rootScope, $location, entryPointsFactory) {
+  ['$scope', '$rootScope', '$location', 'blogFactory',
+    function ($scope, $rootScope, $location, blogFactory) {
       var selectEntryPoint = function(entryPoints, pointName) {
         angular.forEach(entryPoints, function(p) {
           if (p.name === pointName) {
@@ -13,7 +13,7 @@ angular.module('blog').controller('menuController',
         });
       };
       $scope.menuTemplate = 'templates/menu.html';
-      $scope.entryPoints = entryPointsFactory.getMenuEntryPoints();
+      $scope.entryPoints = blogFactory.getMenuEntryPoints();
 
       $scope.go = function(point) {
         selectEntryPoint($scope.entryPoints, point.name);
