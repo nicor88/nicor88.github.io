@@ -9,9 +9,13 @@ module.exports = function(grunt) {
     },
     copy: {
       imgPublic: { cwd: config.copy.srcImg, src: '**/*', dest: config.copy.publicImg, expand: true },
+      indexPublic: { src: 'index.html', dest: config.publicDir },
+      fontsPublic: { cwd: config.copy.srcFonts, src: '**/*',
+        dest: config.copy.publicFonts, expand: true },
       imgLocalDev: { cwd: config.copy.srcImg, src: '**/*', dest: config.copy.localDevImg, expand: true },
       indexLocalDev: { src: 'index-local-dev.html', dest: config.localDevDir + 'index.html' },
-      indexPublic: { src: 'index.html', dest: config.publicDir }
+      fontsLocalDev: { cwd: config.copy.srcFonts, src: '**/*',
+        dest: config.copy.localDevFonts, expand: true }
     },
     concat: {
       jsLibsLocalDev : {
@@ -23,7 +27,7 @@ module.exports = function(grunt) {
         dest: config.localDevDir + config.targetJsFile
       },
       cssLocalDev: {
-        src: [config.src.css, config.src.cssExternal, 'sass-local-dev/application-scss.css'],
+        src: [config.src.cssExternal, config.src.css, 'sass-local-dev/application-scss.css'],
         dest: config.localDevDir + config.targetCssFile
       },
       jsLibsPublic : {
@@ -35,7 +39,7 @@ module.exports = function(grunt) {
         dest: config.publicDir + config.targetJsFile
       },
       cssPublic: {
-        src: [config.src.css, config.src.cssExternal, 'sass-public/application-scss.css'],
+        src: [config.src.cssExternal, config.src.css, 'sass-public/application-scss.css'],
         dest: config.publicDir + config.targetCssFile
       }
     },
@@ -92,11 +96,11 @@ module.exports = function(grunt) {
 
   // build for public
   grunt.registerTask('build-public', ['clean:public', 'copy:imgPublic', 'copy:indexPublic',
-    'concat:jsLibsPublic', 'concat:jsAppPublic', 'concat:cssPublic', 'ngtemplates:public']);
+    'copy:fontsPublic', 'concat:jsLibsPublic', 'concat:jsAppPublic', 'concat:cssPublic', 'ngtemplates:public']);
 
   // build for local-dev
   grunt.registerTask('build-local-dev', ['clean:localDev', 'copy:imgLocalDev', 'copy:indexLocalDev',
-    'concat:jsLibsLocalDev', 'concat:jsAppLocalDev', 'concat:cssLocalDev', 'ngtemplates:localDev']);
+    'copy:fontsLocalDev', 'concat:jsLibsLocalDev', 'concat:jsAppLocalDev', 'concat:cssLocalDev', 'ngtemplates:localDev']);
   // serve local-dev folder
   grunt.registerTask('serve', ['connect:server', 'watch']);
 };

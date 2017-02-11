@@ -10,7 +10,7 @@ angular.module('blog').run(['$templateCache', function($templateCache) {
     "<!-- title of the blog -->\n" +
     "<h3>Blog title</h3>\n" +
     "<!-- search field-->\n" +
-    "\n" +
+    "<span class=\"glyphicon glyphicon-search\" aria-hidden=\"true\"></span>\n" +
     "<!-- articles list-->\n" +
     "<div>Articles  list</div>\n"
   );

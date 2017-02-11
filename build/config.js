@@ -8,7 +8,7 @@ var config = {
   localDevDir: './local-dev/',
   copy: {
     srcImg: 'src/img',
-    srcFonts: 'src/fonts',
+    srcFonts: 'node_modules/bootstrap/dist/fonts/',
     publicImg: 'public/img',
     publicFonts: 'public/fonts',
     localDevImg: 'local-dev/img',
@@ -27,7 +27,9 @@ var config = {
       'node_modules/angular-ui-router/release/angular-ui-router.js'
     ],
     css: ['src/css/**/*.css'],
-    cssExternal: []
+    cssExternal: [
+      'node_modules/bootstrap/dist/css/bootstrap.css'
+    ]
   }
 };
 
