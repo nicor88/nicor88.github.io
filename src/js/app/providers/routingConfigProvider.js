@@ -4,7 +4,7 @@ angular.module('blog').provider('$routingConfig', function() {
     state: 'index',
     title: 'nicor88 Blog',
     url: '/',
-    templateUrl: 'templates/index.html',
+    templateUrl: 'templates/main.html',
     controller: 'indexController'
   };
   routes.about = {
@@ -12,7 +12,7 @@ angular.module('blog').provider('$routingConfig', function() {
     title: 'nicor88 About',
     url: '/about',
     templateUrl: 'templates/about.html',
-    controller: 'indexController'
+    controller: 'aboutController'
   };
   return {
     $get: function() {

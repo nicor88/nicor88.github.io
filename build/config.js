@@ -17,6 +17,7 @@ var config = {
       'src/js/app/*.js',
       'src/js/app/controllers/**/*.js',
       'src/js/app/providers/**/*.js',
+      'src/js/app/factories/**/*.js',
       'src/js/app/directives/**/*.js'
     ],
     jsExternal: [

@@ -1,4 +1,9 @@
 .main-view {
-  position: absolute;
-  top: 27px;
+  margin-top: 60px;
+}
+
+.articles p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
 }

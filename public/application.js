@@ -27,19 +27,47 @@ angular.module('blog').run(['$rootScope', '$state', '$timeout', function($rootSc
 
 'use strict';
 
+angular.module('blog').controller('aboutController',
+  ['$scope', '$rootScope',
+    function ($scope, $rootScope) {
+      $rootScope.$emit('rootScope:emit', 'About');
+    }]);
+
+'use strict';
+
 angular.module('blog').controller('indexController',
-  ['$scope',
-    function ($scope) {
-      $scope.welcomeMessage = "Blog";
+  ['$scope', '$rootScope',
+    function ($scope, $rootScope) {
+      $rootScope.$emit('rootScope:emit', 'Home');
     }]);
 
 'use strict';
 
 angular.module('blog').controller('menuController',
-  ['$scope',
-    function ($scope) {
+  ['$scope', '$rootScope', '$location', 'entryPointsFactory',
+    function ($scope, $rootScope, $location, entryPointsFactory) {
+      var selectEntryPoint = function(entryPoints, pointName) {
+        angular.forEach(entryPoints, function(p) {
+          if (p.name === pointName) {
+            p.isActive = true;
+          } else {
+            p.isActive = false;
+          }
+        });
+      };
       $scope.menuTemplate = 'templates/menu.html';
-      $scope.blogName = "nicor88";
+      $scope.entryPoints = entryPointsFactory.getMenuEntryPoints();
+
+      $scope.go = function(point) {
+        selectEntryPoint($scope.entryPoints, point.name);
+        $location.path(point.link);
+      };
+      $scope.isActive = function(point) {
+        return point.isActive;
+      };
+      $rootScope.$on('rootScope:emit', function(event, pointName) {
+        selectEntryPoint($scope.entryPoints, pointName);
+      });
     }]);
 
 angular.module('blog').provider('$routingConfig', function() {
@@ -48,7 +76,7 @@ angular.module('blog').provider('$routingConfig', function() {
     state: 'index',
     title: 'nicor88 Blog',
     url: '/',
-    templateUrl: 'templates/index.html',
+    templateUrl: 'templates/main.html',
     controller: 'indexController'
   };
   routes.about = {
@@ -56,7 +84,7 @@ angular.module('blog').provider('$routingConfig', function() {
     title: 'nicor88 About',
     url: '/about',
     templateUrl: 'templates/about.html',
-    controller: 'indexController'
+    controller: 'aboutController'
   };
   return {
     $get: function() {
@@ -64,3 +92,17 @@ angular.module('blog').provider('$routingConfig', function() {
     }
   };
 });
+
+'use strict';
+
+angular.module('blog').factory('entryPointsFactory',
+  [function() {
+    var factory = {};
+    factory.getMenuEntryPoints = function() {
+      return [
+        { name: 'About', link: '/about', isActive: false },
+        { name: 'Home', link: '/', isActive: false }
+      ];
+    };
+    return factory;
+    }]);
