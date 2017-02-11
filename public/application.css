@@ -6757,13 +6757,34 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 
 .main-view {
-  margin-top: 60px;
+  margin-top: 65px;
 }
 
 .articles p {
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
+}
+
+.article-name {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 15px;
+  padding: 5px;
+}
+
+.article-name a{
+  font-size: 25px;
+  font-weight: 400;
+  margin: 15px;
+  padding: 5px;
+  color: #000000;
+}
+
+.article-date {
+  font-size: 24px;
+  font-weight: 200;
+  margin: 15px;
 }
 .menu {
   position: fixed;
@@ -6775,12 +6796,13 @@ button.close {
 
 .navbar-nav> li > a {
   margin-left: 20px;
-  font-size: 18px;
-  font-weight: 200;
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000;
 }
 
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #FFF;
+  background-color: transparent;
 }
