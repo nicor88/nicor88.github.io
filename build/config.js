@@ -10,7 +10,7 @@ var config = {
     srcImg: 'src/img',
     srcFonts: 'node_modules/bootstrap/dist/fonts/',
     publicImg: 'public/img',
-    publicFonts: 'fonts',
+    publicFonts: 'public/fonts',
     localDevImg: 'local-dev/img',
     localDevFonts: 'local-dev/fonts'
   },
@@ -27,9 +27,7 @@ var config = {
       'node_modules/angular-ui-router/release/angular-ui-router.js'
     ],
     css: ['src/css/**/*.css'],
-    cssExternal: [
-      'node_modules/bootstrap/dist/css/bootstrap.css'
-    ]
+    cssExternal: []
   }
 };
 
