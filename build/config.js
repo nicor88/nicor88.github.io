@@ -7,8 +7,7 @@ var config = {
   publicDir: './public/',
   localDevDir: './local-dev/',
   copy: {
-    srcImg: 'src/img',
-    publicImg: 'public/img',
+    srcImg: 'img',
     localDevImg: 'local-dev/img'
   },
   src: {

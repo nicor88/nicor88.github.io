@@ -8,8 +8,6 @@ module.exports = function(grunt) {
       localDev: 'local-dev/'
     },
     copy: {
-      imgPublic: { cwd: config.copy.srcImg, src: '**/*', dest: config.copy.publicImg, expand: true },
-      indexPublic: { src: 'index.html', dest: config.publicDir },
       imgLocalDev: { cwd: config.copy.srcImg, src: '**/*', dest: config.copy.localDevImg, expand: true },
       indexLocalDev: { src: 'index-local-dev.html', dest: config.localDevDir + 'index.html' }
     },
@@ -91,7 +89,7 @@ module.exports = function(grunt) {
   // register Tasks
 
   // build for public
-  grunt.registerTask('build-public', ['clean:public', 'copy:imgPublic', 'copy:indexPublic',
+  grunt.registerTask('build-public', ['clean:public',
     'concat:jsLibsPublic', 'concat:jsAppPublic', 'concat:cssPublic', 'ngtemplates:public']);
 
   // build for local-dev
