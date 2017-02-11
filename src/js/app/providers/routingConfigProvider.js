@@ -7,6 +7,13 @@ angular.module('blog').provider('$routingConfig', function() {
     templateUrl: 'templates/index.html',
     controller: 'indexController'
   };
+  routes.about = {
+    state: 'about',
+    title: 'nicor88 About',
+    url: '/about',
+    templateUrl: 'templates/about.html',
+    controller: 'indexController'
+  };
   return {
     $get: function() {
       return routes;

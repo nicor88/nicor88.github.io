@@ -11,6 +11,9 @@
 </head>
 <body ng-app="blog">
     <div ui-view class="main-view"></div>
+    <!-- put the menu after the main view-->
+    <div class="menu" ng-controller="menuController" ng-include="menuTemplate"><div>
+
     <script src="application.js"></script>
     <script src="template.js"></script>
 </body>

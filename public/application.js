@@ -25,14 +25,22 @@ angular.module('blog').run(['$rootScope', '$state', '$timeout', function($rootSc
   });
 }]);
 
-(function() {
-  'use strict';
-  var indexController = function($scope, $rootScope, $location) {
-    $scope.welcomeMessage = "nicor88 Blog";
-  };
-  indexController.$inject = ['$scope', '$rootScope', '$location'];
-  angular.module('blog').controller('indexController', indexController);
-}());
+'use strict';
+
+angular.module('blog').controller('indexController',
+  ['$scope',
+    function ($scope) {
+      $scope.welcomeMessage = "Blog";
+    }]);
+
+'use strict';
+
+angular.module('blog').controller('menuController',
+  ['$scope',
+    function ($scope) {
+      $scope.menuTemplate = 'templates/menu.html';
+      $scope.blogName = "nicor88";
+    }]);
 
 angular.module('blog').provider('$routingConfig', function() {
   var routes = {};
@@ -41,6 +49,13 @@ angular.module('blog').provider('$routingConfig', function() {
     title: 'nicor88 Blog',
     url: '/',
     templateUrl: 'templates/index.html',
+    controller: 'indexController'
+  };
+  routes.about = {
+    state: 'about',
+    title: 'nicor88 About',
+    url: '/about',
+    templateUrl: 'templates/about.html',
     controller: 'indexController'
   };
   return {
