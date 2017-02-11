@@ -10,7 +10,7 @@ var config = {
     srcImg: 'src/img',
     srcFonts: 'node_modules/bootstrap/dist/fonts/',
     publicImg: 'public/img',
-    publicFonts: 'public/fonts',
+    publicFonts: 'fonts',
     localDevImg: 'local-dev/img',
     localDevFonts: 'local-dev/fonts'
   },
