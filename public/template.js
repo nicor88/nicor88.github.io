@@ -49,15 +49,6 @@ angular.module('blog').run(['$templateCache', function($templateCache) {
     "<!-- Fixed navbar -->\n" +
     "<nav class=\"navbar-fixed-top\">\n" +
     "    <div class=\"container\">\n" +
-    "        <!--<div class=\"navbar-header\">\n" +
-    "            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n" +
-    "                <span class=\"sr-only\">Toggle navigation</span>\n" +
-    "                <span class=\"icon-bar\"></span>\n" +
-    "                <span class=\"icon-bar\"></span>\n" +
-    "                <span class=\"icon-bar\"></span>\n" +
-    "            </button>\n" +
-    "            <a class=\"navbar-brand\" href=\"#\">Project name</a>\n" +
-    "        </div>-->\n" +
     "        <div id=\"navbar\" class=\"navbar-collapse collapse\">\n" +
     "            <ul class=\"nav navbar-nav\">\n" +
     "                <li>\n" +
@@ -68,6 +59,11 @@ angular.module('blog').run(['$templateCache', function($templateCache) {
     "                <li>\n" +
     "                    <a href=\"https://www.linkedin.com/in/nicolacorda\">\n" +
     "                        <img src=\"img/linkedin-32px.png\">\n" +
+    "                    </a>\n" +
+    "                </li>\n" +
+    "                <li>\n" +
+    "                    <a href=\"https://twitter.com/nicorc88\">\n" +
+    "                        <img src=\"img/twitter-32px.png\">\n" +
     "                    </a>\n" +
     "                </li>\n" +
     "            </ul>\n" +
