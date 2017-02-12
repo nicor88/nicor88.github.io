@@ -12,5 +12,6 @@ angular.module('blog').controller('indexController',
       // section needed if for some speecific article is needed to call a factory
       if (angular.isDefined($stateParams.article)) {
         console.log($stateParams.article);
+        $rootScope.$emit('rootScope:emit', 'Articles');
       }
     }]);
