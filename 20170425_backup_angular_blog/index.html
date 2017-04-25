@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta attributes -->
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- CSS generate from the building -->
+    <link rel="stylesheet" media="all" href="public/application.css">
+    <!-- All the libs used in the SPA -->
+    <script src="public/libs.js"></script>
+</head>
+<body ng-app="blog">
+    <div ui-view class="container main-view"></div>
+
+    <div class="menu" ng-controller="menuController" ng-include="menuTemplate"><div>
+
+    <script src="public/application.js"></script>
+    <script src="public/template.js"></script>
+</body>
+</html>

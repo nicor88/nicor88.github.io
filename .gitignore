@@ -1,8 +1,10 @@
 # local-dev folder
 local-dev/
+*/local-dev/
 
 # idea folder
 .idea
 
 # node_modules
 node_modules/
+*/node_modules/
