@@ -12,3 +12,4 @@ node_modules/
 # build
 _site
 .sass-cache
+.jekyll-metadata
