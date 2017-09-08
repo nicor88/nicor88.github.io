@@ -8,3 +8,7 @@ local-dev/
 # node_modules
 node_modules/
 */node_modules/
+
+# build
+_site
+.sass-cache
