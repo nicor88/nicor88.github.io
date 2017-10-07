@@ -6,7 +6,7 @@ url: "https://rohanchandra.github.io/"
 theme_settings:
   # Meta
   title: nicor88
-  avatar: https://avatars1.githubusercontent.com/u/6278547?v=3&s=460
+  avatar: assets/img/profile.jpeg
   favicon:
   gravatar: # Email MD5 hash
   description: "" # used by search engines

@@ -21,7 +21,7 @@ and proven software development practices e.g: version control, testing, small d
 <b>Period</b>: Oct 2015 - Now
 
 *   Evolution of ETL pipelines from procedural SQL to Python/PySpark
-*   Maintenance of the Current ETL Pipeline
+*   Maintenance of the current ETL Pipeline
 *   Maintaining and evolving the current AWS Infrastructure with Cloudformation
 *   Data-visualization and reporting
 
@@ -34,3 +34,11 @@ and proven software development practices e.g: version control, testing, small d
 *   KPIs design
 *   Data-visualization and reporting
 *   Maintenance and administration of the BI Suite [SpagoBI](https://www.spagobi.org/)
+
+### Student Software Developer - [TU Berlin/T-Labs](http://www.laboratories.telekom.com/)
+
+<b>Period</b>: May 2013 - Aug 2013
+
+*   Implementation of an extension of a web-based data visualization tool for IPTV QoE Reports
+*   KQI (Key Quality Index) design and implementation
+*   KQI visualization for specific days and for specific locations
