@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-
+<div align="justify">
 My knowledge focus on various programming languages, but I’m working mostly with Python and SQL to
 implement ETL processes, that depending on the amount of data, can run in one Worker or in a Spark
 Cluster with many nodes. In this year I focused on distributed systems to process a huge amount of data, e.g.
@@ -12,6 +12,7 @@ their services, why maintain a Kafka Cluster with ZooKeeper if you can easily se
 a flexible number of shards based on the number of producers? I like to maintain the AWS Infrastructure
 using tools like Cloudformation or Teraform. This is not simply writing config files, but involves using tested
 and proven software development practices e.g: version control, testing, small deployments, design patterns.
+</div>
 
 # Experience
 
@@ -33,7 +34,3 @@ and proven software development practices e.g: version control, testing, small d
 *   KPIs design
 *   Data-visualization and reporting
 *   Maintenance and administration of the BI Suite [SpagoBI](https://www.spagobi.org/)
-
-## Contact me
-
-[nicorc88@gmail.com](mailto:nicorc88@gmail.com)

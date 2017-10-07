@@ -19,7 +19,7 @@ Structure:
 ## Setup the Makefile
 Here how the Makefile look like
 
-```bash
+```
 default: clean install copy zip
 
 install: build_path
