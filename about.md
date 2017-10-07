@@ -28,8 +28,6 @@ and proven software development practices e.g: version control, testing, small d
 
 <b>Period</b>: Feb 2014 - Sep 2015
 
-<b>Duties</b>
-
 *   Data Warehouse design (Dimensional Model/Star schema)
 *   Getting and cleaning data with process of Extract-Transform-Load (ETL)
 *   KPIs design
