@@ -99,6 +99,6 @@ Here what the config above does:
 *   Copy the builded lambda to **_dist/$TRAVIS_COMMIT.zip_**
 *   Upload **_dist/_** to S3 **_deployments/lambdas/your_lambda_**
 
-Enjoy your deployments with Travis-CI
+Enjoy your deployments with [Travis-CI](https://travis-ci.org/)
 
 <br>
