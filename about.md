@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 <div align="justify">
-I'm Nicola, a Data Engineer always looking for new ways to process data.
+I'm Nicola, a <b>Data Engineer</b> always looking for new ways to process data.
 <br><br>
 My knowledge focus on various programming languages, but I’m working mostly with Python and SQL to
 implement ETL processes, that depending on the amount of data, can run in one Worker or in a Spark
@@ -18,8 +18,9 @@ and proven software development practices e.g: version control, testing, small d
 
 # Experience
 
-### Data Engineer - [Babbel](https://home.babbel.com/)
-
+### Data Engineer
+<b>Company</b>: [Babbel](https://home.babbel.com/)
+<br>
 <b>Period</b>: Oct 2015 - Now
 
 *   Evolution of ETL pipelines from procedural SQL to Python/PySpark
@@ -27,8 +28,9 @@ and proven software development practices e.g: version control, testing, small d
 *   Maintaining and evolving the current AWS Infrastructure with Cloudformation
 *   Data-visualization and reporting
 
-### Junior Software Engineer - [eng.it](http://eng.it)
-
+### Junior Software Engineer
+<b>Company</b>: [eng.it](http://eng.it)
+<br>
 <b>Period</b>: Feb 2014 - Sep 2015
 
 *   Data Warehouse design (Dimensional Model/Star schema)
@@ -37,8 +39,9 @@ and proven software development practices e.g: version control, testing, small d
 *   Data-visualization and reporting
 *   Maintenance and administration of the BI Suite [SpagoBI](https://www.spagobi.org/)
 
-### Student Software Developer - [TU Berlin/T-Labs](http://www.laboratories.telekom.com/)
-
+### Student Software Developer
+<b>Company</b>: [TU Berlin/T-Labs](http://www.laboratories.telekom.com/)
+<br>
 <b>Period</b>: May 2013 - Aug 2013
 
 *   Implementation of an extension of a web-based data visualization tool for IPTV QoE Reports
