@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 <div align="justify">
+I'm Nicola, a Data Engineer always looking for new way to process data.
+
 My knowledge focus on various programming languages, but I’m working mostly with Python and SQL to
 implement ETL processes, that depending on the amount of data, can run in one Worker or in a Spark
 Cluster with many nodes. In this year I focused on distributed systems to process a huge amount of data, e.g.
