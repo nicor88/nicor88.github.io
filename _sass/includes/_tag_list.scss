@@ -1,7 +1,21 @@
-.tags {
-  width: 100%;
-  .tag {
-    margin-right: 0.5em;
+.tag-list {
+  font-size: 0.9em;
+  a.button {
+    margin-left: 1em;
+  }
+  a.button:first-child {
+    margin-left: 0;
+  }
+}
+.tag-title {
+  margin-bottom: 0;
+  a {
     color: $tags-color;
+  }
+}
+.tagged-post {
+  .title {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

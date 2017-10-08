@@ -11,9 +11,11 @@ hide: true
 {% for item in (0..site.tags.size) %}
   {% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-    <h2 id="{{ this_word | cgi_escape }}" class="tag-title">
-      #{{ this_word }}
-    </h2>
+    <h5 id="{{ this_word | cgi_escape }}" class="tag-title">
+      <a class="button" href="{{site.baseurl}}/tags#{{this_word}}">
+        <i class="fa fa-tag fa-fw"></i> {{ this_word }}
+      </a>
+    </h5>
     <!-- lists all posts corresponding to specific tag -->
     {% for post in site.tags[this_word] %}
       {% if post.title != null %}

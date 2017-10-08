@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Build an AWS Lambda with Python using Travis-CI
+tags: [aws, lambda, python]
 ---
 
 Building an AWS Lambda function with Python can be trivial. Here my proposal to setup a Github repo
@@ -91,13 +92,13 @@ notifications:
 
 Here what the config above does:
 
-* Install pytest
-* Install libs in **_requirements.txt_**
-* Build Lambda using **_make_**
-* Copy the builded lambda to **_dist/latest.zip_**
-* Copy the builded lambda to **_dist/$TRAVIS_COMMIT.zip_**
-* Upload **_dist/_** to S3 **_deployments/lambdas/your_lambda_**
+*   Install pytest
+*   Install libs in **_requirements.txt_**
+*   Build Lambda using **_make_**
+*   Copy the builded lambda to **_dist/latest.zip_**
+*   Copy the builded lambda to **_dist/$TRAVIS_COMMIT.zip_**
+*   Upload **_dist/_** to S3 **_deployments/lambdas/your_lambda_**
 
-<!---
-![_config.yml]({{ site.baseurl }}/images/config.png)
--->
+Enjoy your deployments with Travis-CI
+
+<br>
