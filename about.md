@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 <div align="justify">
-I'm Nicola, a <b>Data Engineer</b> always looking for new ways to process data.
+I'm Nicola, a <b>Data Engineer</b> living in Berlin.
 <br><br>
 My knowledge focus on various programming languages, but I’m working mostly with Python and SQL to
 implement ETL processes, that depending on the amount of data, can run in one Worker or in a Spark
@@ -19,25 +19,37 @@ and proven software development practices e.g: version control, testing, small d
 # Experience
 
 ### Data Engineer
-<b>Company</b>: [Babbel](https://home.babbel.com/)
+<b>Company</b>: [8fit](https://8fit.com/)
 <br>
-<b>Period</b>: Oct 2015 - Now
+<b>Period</b>: Dec 2017 - Now
 
-*   Evolution of ETL pipelines from procedural SQL to Python/PySpark
-*   Maintenance of the current ETL Pipeline
-*   Maintaining and evolving the current AWS Infrastructure with Cloudformation
-*   Data-visualization and reporting
+### Data Engineer
+<b>Company</b>: [Babbel](https://www.babbel.com/)
+<br>
+<b>Period</b>: Oct 2015 - Nov 2017
 
-### Junior Software Engineer
+*   Design, write, build, test and maintain interactive web reports
+*   Design, operate and scale the platform infrastructure and data products for different internal customers
+*   Design, build, test and maintain data-processing pipelines with a mind toward accuracy, scalability, high performance and data quality
+*   Investigate next-generation data and analytics technologies to expand the capacity and performance of Babbel's stack
+*   Lead and participate in cross-functional projects that support data applications and reporting
+
+Technologies: SQL, Python(pandas, pytest), PySpark, Javascript(node, angular, d3.js, Highcharts, Mocha, Chai), Bash, TravisCI, Terraform
+AWS: EC2, EMR(Haddop, Spark, Presto), RDS, Kinesis, Firehose, DynamoDB, S3, Lambda, IAM, VPC, Cloudformation, CodeDeploy
+CI: Travis
+
+### Junior Business Intelligence Engineer
 <b>Company</b>: [eng.it](http://eng.it)
 <br>
 <b>Period</b>: Feb 2014 - Sep 2015
 
-*   Data Warehouse design (Dimensional Model/Star schema)
-*   Getting and cleaning data with process of Extract-Transform-Load (ETL)
-*   KPIs design
-*   Data-visualization and reporting
-*   Maintenance and administration of the BI Suite [SpagoBI](https://www.spagobi.org/)
+*   Datawarehouse(DWH) design using a dimensional model approach(Kimball)
+*   Implement ETL(Extract Transform Load) procedures to populate DWH tables from OLTP systems
+*   Design, implement and monitor KPIs related to business processes and environmental metrics
+*   Implement and maintain interactive web dashboards and reports, using the business intelligence suite [SpagoBI](ttps://www.spagobi.org/)
+*   Administrate, maintain and scale [SpagoBI](ttps://www.spagobi.org/) for Production
+
+Technologies: SQL, PL/SQL, Java (Spring, Hibernate, Primefaces), Javascript (jQuery, Highcharts)
 
 ### Student Software Developer
 <b>Company</b>: [TU Berlin/T-Labs](http://www.laboratories.telekom.com/)
@@ -47,3 +59,6 @@ and proven software development practices e.g: version control, testing, small d
 *   Implementation of an extension of a web-based data visualization tool for IPTV QoE Reports
 *   KQI (Key Quality Index) design and implementation
 *   KQI visualization for specific days and for specific locations
+
+Technologies: Python, SQL, Javascript(d3.js, MapBox), HTML, CSS, Bash
+
